@@ -1,0 +1,165 @@
+/* overlapping margin: terjadi jika ingin menggabungkan 2 margin */
+/* dihasil akan terlihat bahwa margin antara 2 dan 1 tidak bertambah dan hal ini terjadi karena margin tag 1 > margin. Hal ini hanya terjadi pada kondisi vertikal */
+.satu-1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.dua-1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.tiga-1 {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+}
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-top: 50px;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+}
+
+/* value margin bila negatif akan mengurangi */
+.satu-2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.dua-2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-top: -200px;
+}
+
+.tiga-2 {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+}
+
+/* value margin bila negatif akan mengurangi */
+.satu-4 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dua-4 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tiga-4 {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Shorthand -> 
+    margin: margin-top margin-right margin-bottom margin-left; -> margin: 30px 50px 150px 100px;
+    margin: margin-top=margin-bottom margin-right=margin-left; -. margin: 30px auto;
+    */
+
+.satu-3 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 30px 50px 150px 100px;
+}
+
+.dua-3 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 30px 50px;
+}
+
+.tiga-3 {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+}
+
+/* dihasil akan terlihat bahwa margin antara 2 dan 1 akan bertambah dan hal ini terjadi karena kondisi horizontal */
+.inline div {
+    display: inline-block;
+}
+
+.empat-1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-right: 30px;
+}
+
+.lima-1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-left: 20px;
+}
+
+.enam-1 {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+}
+
+.empat {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-right: 30px;
+}
+
+.lima {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-left: 20px;
+}
+
+.enam {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+}

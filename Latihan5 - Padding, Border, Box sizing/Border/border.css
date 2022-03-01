@@ -1,0 +1,74 @@
+/* Border struktur: 
+    border-arah: width style color;
+
+    border property:
+    1. border-left
+    2. border-right
+    3. border-top
+    4. border-bottom
+
+    shorthand : 
+    border: width style color;
+    
+    style yg ada di border:
+    1. solid -> garis kotak
+    2. dotted -> titik putus-putus
+    3. dashed -> garis putus-putus membentuk kotak
+    5. double -> 2 garis kotak
+    *note: border juga menambah ukuran dari box sama seperti padding
+*/
+
+
+.solid {
+    /* contoh style solid */
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: lightblue;
+    padding: 50px;
+    border: 5px solid black;
+}
+
+.dotted {
+    /* contoh style solid */
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: lightblue;
+    padding: 50px;
+    border: 5px dotted black;
+}
+
+.dashed {
+    /* contoh style solid */
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: lightblue;
+    padding: 50px;
+    border: 5px dashed black;
+}
+
+.double {
+    /* contoh style solid */
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: lightblue;
+    padding: 50px;
+    border: 5px double black;
+}
+
+h2 {
+    /* margin-bottom: -40px; */
+    text-transform: capitalize;
+}
+
+h3 {
+    margin-bottom: 0px;
+    margin-left: -30px;
+}
+
+ul li {
+    margin-left: -15px;
+}

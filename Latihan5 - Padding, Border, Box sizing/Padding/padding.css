@@ -1,0 +1,47 @@
+/* padding sama margin penggunaanya hampir sama dan shorthandnya juga sama */
+/* padding property:
+    1.paddingr-left
+    2. padding-right
+    3. padding-top
+    4. padding-bottom */
+/* *note: padding tidak bisa diberi nilai auto atau minus, tidak sama seperti margin */
+.padding {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: lightblue;
+    padding: 30px 20px 30px 20px;
+}
+
+/* *note: padding menambah ukuran box dalam elemen */
+p {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: lightblue;
+    /* ini tag untuk kondisi awal */
+}
+
+.cth {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: lightblue;
+    padding: 50px;
+    /* ini tag untuk kondisi akhir */
+}
+
+.solusi {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: lightblue;
+    padding: 50px;
+    /* ini tag untuk solusi */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: -40px;
+    text-transform: capitalize;
+}

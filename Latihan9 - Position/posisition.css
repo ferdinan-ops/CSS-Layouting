@@ -1,0 +1,133 @@
+body {
+    font-family: poppins, sans-serif;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.satu {
+    background-color: lightblue;
+}
+
+.dua {
+    background-color: violet;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.tiga {
+    background-color: lightgreen;
+}
+
+.satu-1 {
+    background-color: lightblue;
+}
+
+.dua-1 {
+    background-color: violet;
+    position: static;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.tiga-1 {
+    background-color: lightgreen;
+}
+
+.satu-2 {
+    background-color: lightblue;
+}
+
+.dua-2 {
+    background-color: violet;
+    position: absolute;
+    top: 3400px;
+    left: 50px;
+}
+
+.tiga-2 {
+    background-color: lightgreen;
+}
+
+/* kode solusi absolute */
+.container {
+    width: 600px;
+    height: 650px;
+    border: 5px solid green;
+    position: relative;
+    float: left;
+}
+
+.satu-3 {
+    background-color: lightblue;
+    margin: auto;
+}
+
+.dua-3 {
+    background-color: violet;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tiga-3 {
+    background-color: lightgreen;
+    margin: auto;
+}
+
+.ubah img {
+    width: 500px;
+}
+
+img {
+    margin-top: 10px;
+}
+
+.gambar {
+    float: left;
+    margin-left: 50px;
+}
+
+.bagusin {
+    width: 1000px;
+    height: 700px;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+}
+
+/* clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}

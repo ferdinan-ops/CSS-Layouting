@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensi & Overflow CSS</title>
+
+    <style>
+        /* 
+        value width & height
+        1. px -> nilainya pasti.
+        2. % -> nilai relativ thdp halaman web
+        3. in, cm, mm, pt, pc -> nilai satuan ukuran.
+        */
+
+        /* 
+        Value overflow : 
+        1. visible -> jika ada content yg keluar dari parentnya dia akan keluar. Semua elemen secara default memiliki value visible.
+        2. auto -> jika ada konten yg keluar dari parentnya maka akan dibuat scrolldown disamping kanan nya.
+        3. hidden ->  jika ada konten yg keluar dari parenynya maka konten yg keluar itu akan disembunyikan.
+        4. scroll -> jika ada konten yg keluar dari parentnya maka akan dibuatkan scorlldown dan scroll horizontal.
+        */
+
+        body {
+            font-family: poppins, sans-serif;
+        }
+
+        /* contoh dimensi wisth dan height */
+        .satu {
+            width: 200px;
+            height: 200px;
+            background-color: lightseagreen;
+        }
+
+        .dua {
+            width: 130%;
+            background-color: lightblue;
+        }
+
+        /* contoh overflow default/visible */
+        .tiga p {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+
+        /* contoh overflow auto */
+        .empat {
+            width: 200px;
+            height: 200px;
+            background-color: limegreen;
+            overflow: auto;
+        }
+
+        /* contoh overflow hidden */
+        .lima {
+            width: 200px;
+            height: 200px;
+            background-color: lightcyan;
+            overflow: hidden;
+        }
+
+        /* contoh overflow scroll */
+        .enam {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            overflow: scroll;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Dimensi & Overflow</h1>
+    <h2>Dimensi</h2>
+    <p>Setiap tag/elemen HTML memiliki sebuah dimensi kotak atau sering disebut box model. Box model tsb bisa
+        dimodifikasi dengan porperty dimensi. Dimensi berguna untuk mengatur panjang dan lebar box atau kotak dimensi
+        pada setiap elemen HTML</p>
+    <h4>Property Dimensi :</h4>
+    <ul>
+        <li>width : berguna utk mengatur lebar</li>
+        <li>height : berguna utk mengatur tinggi</li>
+    </ul>
+    <h4>Value width & height :</h4>
+    <ul>
+        <li>px : nilainya pasti</li>
+        <li>% : nilai relativ thdp halaman web</li>
+        <li>in, cm, mm, pt, pc : nilai satuan ukuran.</li>
+    </ul>
+    <h2>Overflow</h2>
+    <p>overflow berguna untuk membuat dimensi sesuai dengan ukuran box dengan menambahkan fitur dari overflow tsb
+        seperti scroll down, menghilangkan sebagian isi elemen, membuat scroll horizontal dll. Contoh penggunaan overlow
+        ini sperti kita mempunyai sebuah box berisi banyak tulisan namun box tsb tidak cukup menampungnya dan tulisan
+        keluar dari box. Nah, dengan overflow inilah hal itu bisa diatasi.</p>
+    <h4>Value overflow :</h4>
+    <ul>
+        <li>visible : jika ada content yg keluar dari parentnya dia akan keluar. Semua elemen secara default memiliki
+            value visible.</li>
+        <li>auto : jika ada konten yg keluar dari parentnya maka akan dibuat scrolldown disamping kanan nya.</li>
+        <li>hidden : jika ada konten yg keluar dari parenynya maka konten yg keluar itu akan disembunyikan.</li>
+        <li>scroll : jika ada konten yg keluar dari parentnya maka akan dibuatkan scorlldown dan scroll horizontal.</li>
+    </ul>
+    <br><br>
+    <!-- contoh dimensi -->
+    <div class="satu">
+        <div class="dua">Contoh Dimensi</div>
+    </div>
+    <!-- contoh overflow default/visible-->
+    <div class="tiga">
+        <h3>Contoh overflow default/visible</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem enim nostrum sunt corrupti molestias
+            harum, non perferendis nisi excepturi numquam odio, tenetur cupiditate magni nobis blanditiis optio omnis
+            voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt? Eveniet numquam sint rem
+            velit adipisci, pariatur repudiandae soluta esse, architecto dignissimos officiis, delectus ipsum tempore
+            repellendus hic inventore? Facilis.</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- contoh overflow auto-->
+    <div class="empat">
+        <h3>Contoh overflow auto</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem enim nostrum sunt corrupti molestias
+            harum, non perferendis nisi excepturi numquam odio, tenetur cupiditate magni nobis blanditiis optio omnis
+            voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt? Eveniet numquam sint rem
+            velit adipisci, pariatur repudiandae soluta esse, architecto dignissimos officiis, delectus ipsum tempore
+            repellendus hic inventore? Facilis.</p>
+    </div>
+    <br><br>
+
+    <!-- contoh overflow hidden -->
+    <div class="lima">
+        <h3>Contoh overflow hidden</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem enim nostrum sunt corrupti molestias
+            harum, non perferendis nisi excepturi numquam odio, tenetur cupiditate magni nobis blanditiis optio omnis
+            voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt? Eveniet numquam sint rem
+            velit adipisci, pariatur repudiandae soluta esse, architecto dignissimos officiis, delectus ipsum tempore
+            repellendus hic inventore? Facilis.</p>
+    </div>
+    <br><br>
+
+    <!-- contoh overflow scroll -->
+    <div class="enam">
+        <h3>Contoh overflow scroll</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem enim nostrum sunt corrupti molestias
+            harum, non perferendis nisi excepturi numquam odio, tenetur cupiditate magni nobis blanditiis optio omnis
+            voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt? Eveniet numquam sint rem
+            velit adipisci, pariatur repudiandae soluta esse, architecto dignissimos officiis, delectus ipsum tempore
+            repellendus hic inventore? Facilis.</p>
+    </div>
+</body>
+
+</html>

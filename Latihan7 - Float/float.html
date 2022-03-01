@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float CSS Layouting</title>
+    <link rel="stylesheet" href="float.css">
+</head>
+
+<body>
+    <h1>Float CSS Layouting</h1>
+    <p>Float merupakan properti pada CSS utk mengatur posisi sebuah elemen. Sebuah elemen dapat dipaksa utk berada di
+        sebelah kiri atau kanan dari parent/pembungkusnya dgn menggunakan properti ini.</p>
+
+    <h2>Value float :</h2>
+    <ol>
+        <li>none (default)</li>
+        <li>left = membuat elemen berada di kiri</li>
+        <li>right = membuat elemen berada di kanan</li>
+    </ol>
+
+    <h2>Contoh Penggunaan Float : </h2>
+    <h3>1. Contoh kotak</h3>
+    <div class="container">
+        <div class="satu"></div>
+        <div class="dua"></div>
+        <div class="tiga"></div>
+    </div>
+
+    <h3>2. Penggunaan Float untuk Text Wrapping</h3>
+    <div class="container-1">
+        <img src="profil.jpeg" alt="profil">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, laboriosam esse, provident minus
+            necessitatibus ipsam pariatur dolor impedit eos illum ducimus quidem exercitationem animi, optio recusandae?
+            Quisquam rerum alias ad ex. Autem delectus fugiat necessitatibus! Magni, perferendis iusto ipsa quos
+            repellat ipsam voluptate corporis officia error provident tempore ad aliquid! Qui voluptate suscipit
+            deserunt officia iste omnis rem harum. Sed adipisci quisquam voluptatem officiis voluptate ad, eos facilis,
+            repudiandae optio deleniti tempore ducimus corporis maxime illo amet saepe molestiae! Quod aspernatur
+            quaerat debitis eaque, alias accusantium dolore optio corrupti laudantium consectetur quos! Eaque
+            perspiciatis necessitatibus reprehenderit error sit vel soluta!</p>
+    </div>
+
+    <h3>3. Penggunaan Float untuk Pengurutan</h3>
+    <h4>Value none</h4>
+    <div class="container-2">
+        <div class="kotak">1</div>
+        <div class="kotak">2</div>
+        <div class="kotak">3</div>
+        <div class="kotak">4</div>
+        <div class="kotak">5</div>
+        <div class="kotak">6</div>
+        <div class="kotak">7</div>
+        <div class="kotak">8</div>
+        <div class="kotak">9</div>
+        <div class="kotak">10</div>
+    </div>
+    <h4>Value left</h4>
+    <div class="container-3">
+        <div class="kotak">1</div>
+        <div class="kotak">2</div>
+        <div class="kotak">3</div>
+        <div class="kotak">4</div>
+        <div class="kotak">5</div>
+        <div class="kotak">6</div>
+        <div class="kotak">7</div>
+        <div class="kotak">8</div>
+        <div class="kotak">9</div>
+        <div class="kotak">10</div>
+    </div>
+    <h4 class="atur">Value right</h4>
+    <div class="container-4">
+        <div class="kotak">1</div>
+        <div class="kotak">2</div>
+        <div class="kotak">3</div>
+        <div class="kotak">4</div>
+        <div class="kotak">5</div>
+        <div class="kotak">6</div>
+        <div class="kotak">7</div>
+        <div class="kotak">8</div>
+        <div class="kotak">9</div>
+        <div class="kotak">10</div>
+    </div>
+
+    <h3 class="atur-1">4. Penggunaan Float untuk multi-column</h3>
+    <h4>Masalah :</h4>
+    <div class="container-6">
+        <div class="kiri-1"></div>
+        <div class="tengah-1"></div>
+        <div class="kanan-1"></div>
+    </div>
+
+    <h4>Solusi :</h4>
+    <div class="container-5">
+        <div class="kiri"></div>
+        <div class="tengah"></div>
+        <div class="kanan"></div>
+    </div>
+</body>
+
+</html>

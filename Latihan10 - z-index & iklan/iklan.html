@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iklan dengan Position</title>
+    <style>
+        body {
+            font-family: popins, sans-serif;
+            height: 2000px;
+        }
+
+        .ads {
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.7;
+            margin: 200px 100px;
+        }
+
+        .close {
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            border: 4px solid black;
+        }
+
+        .close p {
+            font-size: large;
+            margin: 3px 10px;
+            color: white;
+        }
+
+        .navbar {
+            height: 50px;
+            width: 100%;
+            background-color: darkblue;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        h1 {
+            margin-top: 60px;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+    <div class="ads">
+        <div class="close">
+            <p>x</p>
+        </div>
+    </div>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos mollitia, exercitationem officiis deserunt
+        perferendis, eaque libero iste porro magni blanditiis nostrum, expedita sit sed. Voluptas earum molestias
+        mollitia ut animi?
+        Numquam sunt blanditiis expedita! Explicabo, nemo mollitia. Incidunt, placeat. Placeat corporis eaque earum
+        perspiciatis hic optio quibusdam alias esse libero unde reprehenderit, quidem nisi! Quia, quos dignissimos.
+        Nemo, repellat tenetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident esse corporis sequi cumque dolorum, culpa aut,
+        rem nesciunt repellendus placeat dolore neque et illum architecto. In labore cupiditate voluptate repudiandae!
+    </p>
+</body>
+
+</html>

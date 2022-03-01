@@ -1,0 +1,169 @@
+.semua {
+    width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    background-color: lightskyblue;
+}
+
+.container,
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,
+.container-6,
+.container-7,
+.container-8,
+.container-9 {
+    width: 600px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* untuk membuat gambar gak besar */
+.container img,
+.container-2 img,
+.container-3 img,
+.container-4 img,
+.container-5 img {
+    width: 200px;
+    float: left;
+}
+
+.container-1 {
+    overflow: auto;
+}
+
+.bagus {
+    margin-top: 120px;
+}
+
+.container-1 img {
+    width: 200px;
+    float: left;
+}
+
+.text {
+    font-size: 13px;
+    text-indent: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+    padding: 2px;
+}
+
+a:hover {
+    background-color: slateblue;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: salmon;
+    padding: 2px;
+}
+
+pre {
+    background-color: whitesmoke;
+    width: 560px;
+}
+
+.kotak {
+    width: 80px;
+    height: 80px;
+    background-color: salmon;
+    float: left;
+    color: white;
+    margin-right: 5px;
+    margin-top: 5px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.container-8 .kiri {
+    width: 100px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+
+.container-8 .tengah {
+    width: 400px;
+    height: 400px;
+    background-color: lightsalmon;
+    float: left;
+}
+
+.container-8 .kanan {
+    width: 100px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+
+.container-9 .kiri {
+    width: 100px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+
+.container-9 .tengah {
+    width: 400px;
+    height: 400px;
+    background-color: lightsalmon;
+    float: left;
+}
+
+.container-9 .kanan {
+    width: 100px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+
+.bagus-1 {
+    margin-top: 450px;
+}
+
+/* script clear & div kosong */
+.clear {
+    clear: left;
+}
+
+/* script clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}

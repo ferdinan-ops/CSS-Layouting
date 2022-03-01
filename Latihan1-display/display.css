@@ -1,0 +1,81 @@
+/* 
+    belajar display pada css
+
+    div dan span berhubungan dengan display pada css karena tag div dan span mempunyai property display. Namun value div dan span berbeda.
+    1. div memiliki value block
+    2. span memiliki value inline.
+    *note : ini sudah ada catatan nya di latihan html
+
+        setiap tag pd html berada didalam sebuah kotak. proprty display pd css mengatur perilaku dr kotak tsb.
+    setiap tag pd html memiliki nilai default untuk properti display. Tetapi kita jg dpt mengubah perilaku dari
+    tag tsb dgn mengganti valuenya.
+
+    value display: 
+    1. inline 
+        -> elemen yg secara default tdk menambahkan baris baru ketika dibuat.
+        -> lebar dan tinggi elemennya sebesar konten yg ada didlmnya.
+        -> kita tdk dpt mengatur tinggi dan lebar inline
+        -> margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal.
+        -> elemen inline: b, strong, i, em, a, span, sub, sup, button, input, select, textarea, dll.
+
+    2. inline-block
+        -> tdk ada elemen yg secara default memiliki properti display: inline-block;
+        -> kita harus ubah secara manual property tsb.
+        -> perilaku dasarnya sama dgn elemen inline. Artinya dia akan kesamping.
+        -> perbedaaanya, elemen inline-block dpt kita atur tinggi dan lebarnya.
+
+    3. block
+        -> elemen html yg secara default menambah baris baru ketika dibuat
+        -> jika tdk diatur lebarnya, maka lebar default dri elemen block akan memenuhi lebar dari browser/parentnya.
+        -> kita dpt mengatur tinggi dan lebar dari elemen block
+        -> didlm elemen block kita dpt menyimpan tag dgn elemen inline-block, atau bahkan elemen block lg.
+        -> elemen block: h1-h6, p, ol, ul, li, form, hr, div, dll.
+
+    4. none
+        -> berfungsi untuk menghilangkan elemen
+*/
+
+.navigasi a.inline {
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+}
+
+/* hanya img tag inline yg dpt diubah panjang dan lebarnya */
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* contoh penggunaan display inline-block */
+.navigasi a.inline-block {
+    background-color: red;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+h1,
+h2,
+p {
+    background-color: yellow;
+}
+
+/* contoh penggunaan display inline-block */
+.main {
+    width: 600px;
+    background-color: yellow;
+}
+
+.main h2 {
+    background-color: tomato;
+}
+
+/* contoh penggunaan display none */
+img {
+    display: none;
+}
+
+.navigasi-2 li {
+    display: inline;
+}

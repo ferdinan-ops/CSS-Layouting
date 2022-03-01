@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="posisition.css">
+</head>
+
+<body>
+    <h1>Position</h1>
+    <p>Sebuah properti CSS yg memungkinkan kita untuk menggeserkan sebuah elemen tanpa harus mempengaruhi elemen HTML
+        sekitarnya</p>
+    <h2>Value position :</h2>
+    <ol>
+        <li>
+            <h3>static</h3>
+            <ul>
+                <li><b>static</b> adalah nilai default dari tiap" elemen ketika tdk diberi position</li>
+                <li>Menggunakan position selain <b>static</b> (non-static), akan membuat sebuah elemen menjadi
+                    seolah-olah berbeda dimensi dari elemen lainnya</li>
+                <li>Elemen yg diberi position selain <b>static</b> dpt menggunakan properti <b>top</b>, <b>left</b>,
+                    <b>bottom</b> dan <b>right</b> untuk mengatur posisinya</li>
+            </ul>
+        </li>
+        <li>
+            <h3>relative</h3>
+            <ul>
+                <li>Ketika kita menggerakkan elemen dgn posisi relative (menggunakan properti <b>top</b>, <b>left</b>,
+                    <b>bottom</b> dan <b>right</b>), ruang yg ditempati oleh elemen tsb masih ada</li>
+                <li>Ketika kita menggerakkan elemen dgn posisi relative, elemen akan bergerak <b>relatif thdp posisi
+                        semulan-nya</b></li>
+                <li>Jika kita memberi properti <b>top: 0;</b> dan <b>left: 0;</b> maka elemen tdk berubah posisinya</li>
+            </ul>
+        </li>
+        <li>
+            <h3>absolute</h3>
+            <ul>
+                <li>
+                    <p>Ketika kita menggerakkan elemen dgn posisi <b>absolute</b> (menggunakan properti <b>top</b>,
+                        <b>left</b>, <b>bottom</b> dan <b>right</b>), ruang yg ditempati tsb dianggap tidak ada</p>
+                    <img src="gambar/absolute.png" alt="gambar contoh materi diatas">
+                </li>
+                <li>
+                    <p>Ketika kita menggerakkan elemen dgn posisi absolute, elemen bergerak relatif thdp posisi dari
+                        elemen
+                        parent-nya, <b>selama element parent-nya memiliki posisi yg juga non-static</b>. <i>*note:
+                            parent-nya disini adlh parent terdekatnya</i></p>
+                    <img src="gambar/absolute-2.png" alt="gambar contoh materi diatas">
+                </li>
+                <li class="ubah">
+                    <p>Jika kita memberi properti <b>top: 0;</b> dan <b>left: 0;</b> maka elemen akan berada di ujung
+                        kiri atas dari elemen parent-nya.</p>
+                    <img src="gambar/absolute-3.png" alt="gambar contoh materi diatas">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>fixed</h3>
+            <ul>
+                <li>Value fixed ini sering digunakan untuk membuat gambar karena posisi nilai ini tetap berada
+                    ditempatnya bila discroll.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Contoh Penggunaan position :</h2>
+    <ol>
+        <li>
+            <h3>Menggunakan Value relative</h3>
+            <ul>
+                <li>
+                    <h4>Masalah</h4>
+                    <p>Masalah thdp elemen dibawah ini adalah saat ingin memindahkan salah satu elemen namun elemen
+                        disekitarnya
+                        juga ikut berpindah dan hal itu harus dihindari karena tujuannya bukan begitu.</p>
+                    <p><i>*note : masalah ini menggunakan property position: static;</i></p>
+                    <div class="satu-1"></div>
+                    <div class="dua-1"></div>
+                    <div class="tiga-1"></div>
+                </li>
+                <li>
+                    <h4>Solusi</h4>
+                    <p>Pada kondisi ini salah satu elemen yang memiliki value relative diangkat satu dimensi dari kedua
+                        elemen yang lain dan dapat menggunakan properti top, left, right, dan bottom tdk seperti masalah
+                        diatas.</p>
+                    <div class="satu"></div>
+                    <div class="dua"></div>
+                    <div class="tiga"></div>
+                </li>
+            </ul>
+
+        </li>
+        <li>
+            <h3>Menggunakan Value absolute</h3>
+            <ul>
+                <li>
+                    <h4>Masalah</h4>
+                    <p>Masalah thdp elemen dibawah ini adalah saat ingin memindahkan elemen yg bernilai absolute tidak
+                        sesuai dengan ukurannya, dikarenakan value absolute ini berdasarkan element parent terdekatnya
+                        dan pada kondisi ini adalah body.</p>
+                    <div class="satu-2"></div>
+                    <div class="dua-2"></div>
+                    <div class="tiga-2"></div>
+                </li>
+                <li>
+                    <h4>Solusi</h4>
+                    <p>Pada kondisi ini elemen violet memiliki dimensi yg berbeda dari dimensi 2 kotak elemen lainnya.
+                        Nah, untuk membuat kotak violet berada didalam border kita perlu membuat elemen border/
+                        pembungkus itu berada di dimensi violet dgn cara membuat posisinya bernilai relative</p>
+                    <div class="bagusin cf">
+                        <div class="container">
+                            <div class="satu-3"></div>
+                            <div class="dua-3"></div>
+                            <div class="tiga-3"></div>
+                        </div>
+                        <div class="gambar">
+                            <img title="Contoh gambaran disebelah" src="gambar/absolute-solusi.png" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Menggunakan Value fixed</h3>
+            <p>Klik <a href="fixed.html">disini</a> untuk melihat.</p>
+        </li>
+    </ol>
+</body>
+
+</html>

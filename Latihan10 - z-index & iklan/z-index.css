@@ -1,0 +1,48 @@
+body {
+    font-family: poppins, sans-serif;
+}
+
+.bungkus {
+    position: static;
+    width: 430px;
+    height: 430px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.satu {
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.dua {
+    background-color: lightgreen;
+    top: 100px;
+    left: 100px;
+}
+
+.tiga {
+    background-color: salmon;
+    top: 200px;
+    left: 200px;
+}
+
+.pembungkus {
+    width: 396px;
+    height: 396px;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+code {
+    background-color: whitesmoke;
+}
+
+pre {
+    background-color: whitesmoke;
+    width: 400px;
+}

@@ -1,0 +1,31 @@
+/* 
+    konsep dasar box model: 
+    1. setiap elemen di halaman berada di dalam sebuah box (kotak).
+    2. kita bisa mengatur ukuran dan posisi kotak tsb.
+    3. kita bisa memberi warna / gambar sbg background kotak tsb.
+
+    css box model mendefinisikan 'kotak' yg dihasilkan oleh sebuah elemen, lalu menampilkannya sesuai dgn format visualnya.
+    css box model terdiri dari : 
+    1.  margin -> area transparan di sekitar kotak (diluar border).
+        property utk margin : 
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
+        - margin
+    2.  padding -> area transparan di dlm kotak (antara content dan border).
+        property utk padding : 
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - padding
+    3.  border -> batas di sekeliling content dan padding. *note: tdk transparan.
+        property utk margin : 
+        - border-top
+        - border-right
+        - border-bottom
+        - border-left
+        - border
+    4.  content -> konten sebenarnya di dlm box, bisa berupa link,tulisan atau gambar.
+*/

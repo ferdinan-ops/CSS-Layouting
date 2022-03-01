@@ -1,0 +1,140 @@
+/* Float merupakan properti pada CSS utk mengatur posisi sebuah elemen. Sebuah elemen dapat dipaksa utk berada di sebelah kiri atau kanan dari parent/pembungkusnya dgn menggunakan properti ini. */
+/* Value float : 
+    1. none (default)
+    2. left -> membuat elemen berada di kiri
+    3. right -> membuat elemen berada di kanan
+*/
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+ol li {
+    margin-left: -10px;
+}
+
+.container,
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,
+.container-6 {
+    width: 600px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.satu,
+.dua,
+.tiga {
+    width: 100px;
+    height: 100px;
+}
+
+.satu {
+    background-color: lightblue;
+}
+
+.dua {
+    background-color: lightcoral;
+    float: left;
+    margin-left: 20px;
+}
+
+.tiga {
+    background-color: lightsalmon;
+}
+
+.container-1 img {
+    width: 200px;
+    float: left;
+}
+
+p {
+    text-align: justify;
+}
+
+.container-2 .kotak {
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    /* untuk membuat character berada di tengah kotak pakai line-height dengan nilai yg sama dgn height */
+}
+
+.container-3 {
+    margin-top: 10px;
+}
+
+.container-3 .kotak {
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    float: left;
+}
+
+.atur {
+    margin-top: 70px;
+}
+
+.container-4 .kotak {
+    width: 50px;
+    height: 50px;
+    background-color: salmon;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    float: right;
+}
+
+.atur-1 {
+    margin-top: 80px;
+}
+
+.kiri {
+    width: 100px;
+    height: 500px;
+    background-color: lightblue;
+    float: left;
+}
+
+.kanan {
+    width: 100px;
+    height: 500px;
+    background-color: lightsalmon;
+    float: left;
+}
+
+.tengah {
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    float: left;
+}
+
+.kiri-1 {
+    width: 100px;
+    height: 500px;
+    background-color: lightblue;
+}
+
+.kanan-1 {
+    width: 100px;
+    height: 500px;
+    background-color: lightsalmon;
+}
+
+.tengah-1 {
+    width: 400px;
+    height: 500px;
+    background-color: black;
+}

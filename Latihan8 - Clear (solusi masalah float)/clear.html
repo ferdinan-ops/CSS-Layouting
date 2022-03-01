@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear CSS Layouting</title>
+    <link rel="stylesheet" href="clear.css">
+</head>
+
+<body>
+    <div class="semua">
+        <h1>Clear CSS Layouting</h1>
+        <p>Clear ini berfungsi untuk menghentikan/membersihkan float dan mengatasi masalah yang dibuat property float
+            yaitu
+            membuat elemen jadi tidak dibaca
+            oleh grup elemen parentnya. Namun banyak juga cara untuk dapat mengatasi hal tsb tetapi hanya property clear
+            ini
+            yang lebih efektif untuk digunakan dan disarankan.</p>
+
+        <h4>Value Clear :</h4>
+        <ul>
+            <li>left : beri nilai left jika nilai float = left</li>
+            <li>right : beri nilai right jika nilai float = right</li>
+            <li>both : beri nilai both jika ingin membersihkan float bernilai left dan right</li>
+        </ul>
+
+        <h4>Cara menghentikan float :</h4>
+        <ul>
+            <li>Menggunakan property overflow</li>
+            <li>Menggunakan tag div kosong</li>
+            <li>Menggunakan teknik micro clearfix</li>
+        </ul>
+
+        <h4>Contoh Menghentikan float :</h4>
+        <ol>
+            <!-- solusi 1 -->
+            <li>Menggunakan property overflow</li>
+            <ul>
+                <li>
+                    <h5>Masalah</h5>
+                    <div class="container">
+                        <img src="profil.jpeg" alt="profil">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                    </div>
+                </li>
+                <li class="bagus">
+                    <h5>Solusi</h5>
+                    <div class="container-1">
+                        <img src="profil.jpeg" alt="profil">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                    </div>
+                </li>
+            </ul>
+            <br><br>
+
+            <!-- solusi 2 -->
+            <li>Menggunakan property div kosong dan clear</li>
+            <ul>
+                <li>
+                    <h5>Masalah</h5>
+                    <div class="container-2">
+                        <img src="profil.jpeg" alt="profil">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                    </div>
+                </li>
+                <li class="bagus">
+                    <h5>Solusi</h5>
+                    <div class="container-3">
+                        <img src="profil.jpeg" alt="profil">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <h5>Masalah</h5>
+                    <div class="container-6">
+                        <div class="kotak">1</div>
+                        <div class="kotak">2</div>
+                        <div class="kotak">3</div>
+                        <div class="kotak">4</div>
+                        <div class="kotak">5</div>
+                        <div class="kotak">6</div>
+                        <div class="kotak">7</div>
+                        <div class="kotak">8</div>
+                        <div class="kotak">9</div>
+                        <div class="kotak">10</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                    </div>
+                </li>
+                <li>
+                    <h5>Solusi</h5>
+                    <div class="container-7">
+                        <div class="kotak">1</div>
+                        <div class="kotak">2</div>
+                        <div class="kotak">3</div>
+                        <div class="kotak">4</div>
+                        <div class="kotak">5</div>
+                        <div class="kotak">6</div>
+                        <div class="kotak">7</div>
+                        <div class="kotak">8</div>
+                        <div class="kotak">9</div>
+                        <div class="kotak">10</div>
+                        <div class="clear"></div>
+                        <div class="clear"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <h5>Masalah</h5>
+                    <div class="container-8">
+                        <div class="kiri"></div>
+                        <div class="tengah"></div>
+                        <div class="kanan"></div>
+                    </div>
+                </li>
+                <li class="bagus-1">
+                    <h5>Solusi</h5>
+                    <div class="container-9">
+                        <div class="kiri"></div>
+                        <div class="tengah"></div>
+                        <div class="kanan"></div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <br>
+            </ul>
+            <br><br>
+
+            <!-- solusi 3 -->
+            <li>Menggunakan teknik micro clearfix</li>
+            <p class="text">Perlu diperhatikan teknik micro clearfix ini adalah buatan seseorang yang bernama Nicolas
+                Galagher. Untuk
+                menggunakan cara ini Anda harus menyalin dan menempel script yang ada di website milik Nicolas Galagher.
+                Klik <a href="https://nicolasgallagher.com/micro-clearfix-hack/">disini</a> untuk menggunakannya.</p>
+
+            <h4>Berikut code clearfix :</h4>
+            <pre>
+                /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+            </pre>
+
+            <ul>
+                <li>
+                    <h5>Masalah</h5>
+                    <div class="container-4">
+                        <img src="profil.jpeg" alt="profil">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                    </div>
+                </li>
+                <li class="bagus">
+                    <h5>Solusi</h5>
+                    <div class="container-5 cf">
+                        <img src="profil.jpeg" alt="profil">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim ipsa molestiae eius
+                            illum.</p>
+                    </div>
+                </li>
+            </ul>
+        </ol>
+    </div>
+</body>
+
+</html>

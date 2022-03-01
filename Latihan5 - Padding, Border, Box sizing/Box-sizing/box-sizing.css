@@ -1,0 +1,60 @@
+/* 
+    Penggunaan box-sizing berguna utk mengatasi permasalahan ukuran box yang tidak sesuai dgn width akibat padding dan border 
+    
+*/
+
+div {
+    /* disini jg dapat dibuat box-sizing: border-box */
+    margin: 20px auto;
+    width: 600px;
+}
+
+.satu {
+    background-color: lightblue;
+    padding: 10px;
+    border: 5px solid yellow;
+    margin-bottom: 20px;
+}
+
+.dua {
+    background-color: lightgreen;
+    padding: 20px;
+    border: 10px dashed tomato;
+}
+
+.satu-1 {
+    /* width=570px didapat dari -> wisth div - (2*padding) - (2*border-width) = 600px - (2*10px) - (2*5px) = 570px*/
+    width: 570px;
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 5px solid yellow;
+}
+
+.dua-1 {
+    /* width=540px didapat dari -> width div - (2*padding) - (2*border-width) = 600px - (2*20px) - (2*10px) = 540px*/
+    width: 540px;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 10px dashed tomato;
+}
+
+.satu-2 {
+    /* property box-sizing dpt digunakan di satu" atau di div yg ada di atas lgsg aku buat disini biar ada cth aj */
+    background-color: lightblue;
+    padding: 10px;
+    border: 5px solid yellow;
+    box-sizing: border-box;
+}
+
+.dua-2 {
+    background-color: lightgreen;
+    padding: 20px;
+    border: 10px dashed tomato;
+    box-sizing: border-box;
+}
+
+h2,
+h1 {
+    text-transform: capitalize;
+}
